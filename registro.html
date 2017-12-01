@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>TrigoFácil- Aprende Trigonometria de manera facil!!</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
+        <link rel="stylesheet" href="css/TrigoFacil.css"/>
+</head>
+<body>
+	 <section id="portada" class="portada"> <!--Portada-->
+        	 <header id="header" class="header contenedor"><!--header-->
+		        <figure class="logotipo"><!--logotipo-->
+		            <img src="images/trigoFacil.jpg" width="250" height="80" alt="TrigoFacil logotipo"/>
+		        </figure>
+		        <nav class="menu"> <!--menu-->
+		            <ul>
+		                <li>
+		                    <a href="index.html">Home</a>
+		                </li>
+		                 <li>
+                        	<a href="index.html#Información">Información</a>
+                    	</li>
+		                <li>
+		                    <a href="cursos.html">Cursos</a>
+		                </li>
+		                <li>
+		                    <a href=#registro>Registrate</a>
+		                </li>
+                        <li>
+                            <a href="login.html">Ingresar</a>
+                        </li>
+		            </ul>
+		        </nav>
+        </header> 
+            <div class="contenedor">
+                <h1 class="titulo">Aprende <span>Trigo</span>metría <span>Fácil</span></h1><!--titulo-->
+                <h3 class="title-a">Porque nunca aprender había sido tan fácil</h3><!--resumen-->
+                <a class="button" href="#guitarras">Conoce más</a><!--botón-->
+            </div>
+        </section>
+        <section id="registro">
+        <div class="registro">
+        	<h2>Registro</h2>
+        </div>
+     <div class="loginCaja">
+	<div class="col1 login">
+				<label for="nombre">Nombre</label>
+                    <input type="text" required id="nombre" class="marginCaja" name="nombre" placeholder="Nombre"/>
+                <label for="Apellidos">Apellidos</label>
+                    <input type="text" required id="Apellidos" class="marginCaja" name="Apellidos" placeholder="Apellidos"/>
+                <label for="email">E-mail</label>
+                    <input type="email" required id="email" class="marginCaja" name="email" placeholder="example-jr@hotmail.com"/>
+                <label for="email">Contraseña</label>
+                    <input type="password" required id="password" class="marginCaja" name="password" placeholder="******"/>
+                <label for="email">Confirmar-Contraseña</label>
+                    <input type="password" required id="password" class="marginCaja" name="password" placeholder="******"/>
+                <div class="sexo">
+                        <label for="mujer">
+                        <input type="radio" checked id="Mujer" name="sexo" value="Mujer"> Mujer
+                      </label>
+                       <label for="Hombre">
+                        <input type="radio" id="Hombre" name="sexo" value="Hombre"> Hombre
+                      </label>
+                  </div>
+                 <a class="button2" href="#registrarme">Registrarme</a><!--botón-->
+            </div>
+    </div>
+    </div>
+    </section>
+	<footer class="footer">
+            <div class="contenedor">
+            <div class="contacto">
+                <img src="images/logoblanco.jpg" width="250" height="80" alt="logotipo blanco"/>
+                <a href="tel:+5730244566"><strong>Telefono</strong> <span>3024456678</span></a>
+                <a href="mailto:trigo-facil@hotmail.com"><strong>E-mail</strong> <span>trigo-facil@hotmail.com</span></a>
+            </div> 
+            <form class="formulario">
+                <div class="col1">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" required id="nombre" name="nombre"/>
+                    <label for="email">E-mail</label>
+                    <input type="email" required id="email" name="email"/>
+                    <div class="sexo">
+                        <label for="mujer">
+                        <input type="radio" checked id="mujer" name="sexo" value="mujer"> mujer
+                      </label>
+                       <label for="hombre">
+                        <input type="radio" id="hombre" name="sexo" value="hombre"> hombre
+                      </label>
+                  </div>
+                  <div class="intereses">
+                    <label for="cotizacion">
+                       <input type="checkbox" checked id="Aportes" name="intereses" value="Aportes"> Aportes
+                    </label>
+                    <label for="reclamos">
+                      <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
+                    </label>
+                     <label for="comentarios">
+                      <input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comentarios
+                    </label>
+                     <label for="otros">
+                      <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
+                    </label>
+                  </div>
+                </div>
+                  <div class="col2">                    
+                    <label for="comentarios">Comentarios</label>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+                    <input type="submit" value="Enviar" class="button" />
+                  </div>
+                </form>
+            </div>
+        </footer>
+    </body>
+</html>

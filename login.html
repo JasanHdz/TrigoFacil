@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+		<html>
+		<head>
+			<title>sistema de login</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+			<!-- vinculo a bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Temas-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+ <link rel="stylesheet" href="CSS/TrigoFacil.css"/>
+		</head>
+		<body>
+         <section id="portada" class="portada"> <!--Portada-->
+           <header id="header" class="header contenedor"><!--header-->
+            <figure class="logotipo"><!--logotipo-->
+                <img src="images/trigoFacil.jpg" width="250" height="80" alt="TrigoFacil logotipo"/>
+            </figure>
+            <nav class="menu"> <!--menu-->
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                     <li>
+                        <a href="index.html#Información">Información</a>
+                    </li>
+                    <li>
+                        <a href="cursos.html">Cursos</a>
+                    </li>
+                    <li>
+                        <a href="registro.html#registro">Registrate</a>
+                    </li>
+                        <li>
+                            <a href="login.html#login">Ingresar</a>
+                        </li>
+                </ul>
+            </nav>
+        </header> 
+            <div class="contenedor">
+                <h1 class="titulo">Aprende <span>Trigo</span>metría <span>Fácil</span></h1><!--titulo-->
+                <h3 class="title-a">Porque nunca aprender había sido tan fácil</h3><!--resumen-->
+                <a class="button" href="#guitarras">Conoce más</a><!--botón-->
+            </div>
+        </section>
+
+     <section id="login">
+		 <div id="Contenedor">
+		 <div class="Icon"><span class="glyphicon glyphicon-user"></span></div>
+		 <?php
+		 //Datos para ingresar
+		 //usuario:       marcos@gmail.com
+		 //Contraseña: test12345
+
+		 if(!empty($_POST['correo']) && !empty($_POST['contra'])){
+		 	$iniciar=new Login($_POST['correo'],$_POST['contra']);
+		 	$iniciar->Ingresar();
+             echo $iniciar->MostrarMsg();
+		 }
+         
+		 ?>
+		 <div class="ContentForm">
+		 	<form action="" method="post" name="FormEntrar">
+		 		<div class="input-group input-group-lg">
+				  <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-envelope"></i></span>
+				  <input type="email" class="form-control" name="correo" placeholder="Correo" id="Correo" aria-describedby="sizing-addon1" required>
+				</div>
+				<br>
+				<div class="input-group input-group-lg">
+				  <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+				  <input type="password" name="contra" class="form-control" placeholder="******" aria-describedby="sizing-addon1" required>
+				</div>
+				<br>
+				<button class="btn btn-lg btn-primary btn-block btn-signin" id="IngresoLog" type="submit">Entrar</button>
+				<div class="opcioncontra"><a href="">Olvidaste tu contraseña?</a></div>
+		 	</form>
+		 </div>
+			</div>
+</section>
+         <?php 
+
+          ?>
+           </section>
+        <footer class="footer">
+            <div class="contenedor">
+            <div class="contacto">
+                <img src="images/logoblanco.jpg" width="250" height="80" alt="logotipo blanco"/>
+                <a href="tel:+5730244566"><strong>Telefono</strong> <span>3024456678</span></a>
+                <a href="mailto:trigo-facil@hotmail.com"><strong>E-mail</strong> <span>trigo-facil@hotmail.com</span></a>
+            </div> 
+            <form class="formulario">
+                <div class="col1">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" required id="nombre" name="nombre"/>
+                    <label for="email">E-mail</label>
+                    <input type="email" required id="email" name="email"/>
+                    <div class="sexo">
+                        <label for="mujer">
+                        <input type="radio" checked id="mujer" name="sexo" value="mujer"> mujer
+                      </label>
+                       <label for="hombre">
+                        <input type="radio" id="hombre" name="sexo" value="hombre"> hombre
+                      </label>
+                  </div>
+                  <div class="intereses">
+                    <label for="cotizacion">
+                       <input type="checkbox" checked id="Aportes" name="intereses" value="Aportes"> Aportes
+                    </label>
+                    <label for="reclamos">
+                      <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
+                    </label>
+                     <label for="comentarios">
+                      <input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comentarios
+                    </label>
+                     <label for="otros">
+                      <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
+                    </label>
+                  </div>
+                </div>
+                  <div class="col2">                    
+                    <label for="comentarios">Comentarios</label>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+                    <input type="submit" value="Enviar" class="button" />
+                  </div>
+                </form>
+            </div>
+        </footer>
+		</body>
+		<!-- vinculando a libreria Jquery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Libreria java scritp de bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		</html>		

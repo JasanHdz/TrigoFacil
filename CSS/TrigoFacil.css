@@ -1,0 +1,397 @@
+** {
+  width: tamaño;
+  height: tamaño;
+  padding: 10px;
+  padding-top: 10px;
+  padding-right: 13px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding: 10px 13px 5px 15px
+  margin: 10px;
+  margin-top: 10px;
+  margin-right: 13px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  margin: 10px 13px 5px 15px
+  border: 2px solid red;
+}*/
+body {
+  font-family: 'Allerta', sans-serif
+  border: 0;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background: #273b47;
+  color: white;
+}
+
+th {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+td {
+  padding: 20px;
+}
+
+table, td, th {
+  border: 1px solid #273b47;
+  border-collapse: collapse;
+}
+
+input, textarea {
+  outline: 0;
+}
+
+input:focus, textarera:focus {
+  background: lightgray;
+}
+
+.marginCaja { 
+margin-bottom: 20px;
+margin-top: 5px;
+padding: 5px 12px;
+border-radius: 5px;
+}
+
+
+.contenedor{
+  width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+
+.button {
+  border-radius: 12px;
+  border: none;
+  background: #fd324e;
+  color: white;
+  padding: 7px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  background: line-gradient(to left, #fe344e, #ff7250);
+}
+
+.button2 {
+  margin: auto;
+  border-radius: 12px;
+  border: none;
+  background: #fd324e;
+  color: white;
+  padding: 7px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  background: line-gradient(to left, #fe344e, #ff7250);
+}
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  margin-bottom: 0px;
+  margin-top: 70px;
+}
+
+.titulo span {
+  text-decoration: underline;
+}
+
+.title-a {
+  font-size: 24px;
+  margin-top: 0;
+
+}
+
+
+.title-b {
+  font-size: 40px;
+  margin-bottom: 30px;
+
+  
+}
+.guitarras{
+  color: #1F313C;
+  margin-bottom: 60px;
+}
+
+.guitarras h2{
+  font-size: 35px;
+}
+
+
+.portada {
+  background-image: url("../images/trigonometria.png");
+  background-size: cover;
+  
+  padding: 20px;
+  height: 500px;
+}
+
+
+.portada button{
+  margin-bottom: 70px;
+}
+
+
+.menu{
+  font-size: 24px;
+  display: inline-block;
+  position: absolute;
+  right: -150px;
+}
+
+
+.menu li {
+  display: inline-block;
+  margin-left: 30px;
+
+}
+
+
+.menu li:before{
+  content: '° ';
+  font-size: 25px;
+  line-height: 20px;
+  
+}
+
+.menu a {
+  
+  text-decoration: none;
+}
+
+.logotipo{
+  display: inline-block;
+  margin-left: 0;
+}
+
+.guitarra{
+  margin: 10px 10px 40px 10px;
+  padding: 10px;
+  /*overflow: hidden;*/
+  border: 1px solid #1F313C;
+  border-radius: 8px;
+}
+
+.guitarra ol {
+  padding: 0;
+}
+
+.guitarra.b {
+  height: 190px;
+}
+
+.derecha {
+  float: right;
+  top: -127px;
+  margin-bottom: 0px;
+}
+
+.izquierda {
+  float: left;
+  
+}
+
+.contenedor-guitarra-a {
+  padding-left: 20px;
+  position: initial;
+}
+
+.contenedor-guitarra-b {
+  margin-left: 370px;
+  position: initial;
+  bottom: 90px;
+}
+
+.header {
+  position: relative;
+}
+
+
+.footer {
+  background: #050404;
+  padding: 50px 10px;
+}
+
+.contacto {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+.contacto img {
+  display: block;
+}
+
+.contacto strong {
+  display: block;
+}
+
+.contacto a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 10px 10px 0;
+}
+
+
+.footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario {
+  display: flex;
+  width: 400px;
+  color: white;
+  
+}
+
+
+.col1, .col2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.col1 {
+  margin-right: 15px;
+}
+
+.col2 {
+  align-items: flex-start;
+}
+
+.col2 .button
+{
+  margin-top: 15px;
+}
+
+.intereses label {
+  font-size: 14px;
+}
+
+.formulario label, .sexo, .intereses {
+  margin-bottom: 10px
+}
+
+.sexo {
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.derechaNext {
+  margin-left: 20px;
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
+
+.ListVideo{
+  margin-left: 30px;
+}
+
+.Marco-referencia{
+  margin-left: 20px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+  background: #232323;
+}
+.video1{
+  margin-left: 250px;
+  
+}
+.registro{
+  margin-left: 620px;
+
+}
+.loginCaja {
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-bottom: 140px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background: #D2C9C7;
+  border-radius: 12px;
+
+}
+.col1 .login{
+  margin-left: 180px;
+}
+/**
+ * se aplica el ancho, margen centrado
+ * borde de un pixel con redondeao, y rellenado
+ * a la izquierda y derecha
+ */
+#Contenedor{
+  width: 400px;
+  margin: 50px auto;
+  background-color: #F3EDED;
+    border: 1px solid #ECE8E8;
+  height: 400px;
+  border-radius:8px;
+  padding: 0px 9px 0px 9px;
+}
+
+/**
+ * Aplicando al icono de usuario el color de fondo,
+ * rellenado de 20px y un redondeado de 120px en forma
+ * de un circulo
+ */
+.Icon span{
+background: #A8A6A6;
+padding: 20px;
+border-radius: 120px;
+}
+/**
+ * Se aplica al cotenedor madre un margen de tamño 10px hacia la cabecera y pie,
+ * color de fuente blanco,un tamño de fuente 50px y texto centrado.
+ */
+.Icon{
+  margin-top: 10px;
+  margin-bottom:10px; 
+    color: #FFF;
+    font-size: 50px;
+    text-align: center;
+}
+/**
+ * Se aplica al contenedor donde muetra
+ * la opcion de olvidades tu contraseña
+ */
+.opcioncontra{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/**
+ * EN las siguientes lineas
+ * se define el diseño en el que
+ * se mostrara en los dispositivos moviles
+ */
+
+/******************************************/
+/***    DISEÑO PARA MOVILES 320        ****/
+/******************************************/
+@media only screen and (max-width:320px){
+#Contenedor{
+  width: 100%;
+  height: auto;
+  margin: 0px;
+}
+
+/******************************************/
+/***    DISEÑO PARA MOVILES 240        ****/
+/******************************************/
+@media only screen and (max-width:240px){
+  
+}
